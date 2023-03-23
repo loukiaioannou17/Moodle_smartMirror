@@ -1,0 +1,210 @@
+.friday-march-175 {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  font-size: var(--font-size-21xl);
+  font-weight: 500;
+}
+.div5 {
+  top: 120px;
+  left: 60px;
+  font-size: var(--font-size-46xl);
+  font-weight: 300;
+}
+.c5,
+.div5,
+.pm5 {
+  position: absolute;
+}
+.pm5 {
+  top: 143px;
+  left: 226px;
+  font-size: var(--font-size-31xl);
+  font-weight: 300;
+}
+.c5 {
+  top: 1px;
+  left: 60px;
+}
+.mask-group-icon15 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.c-parent2 {
+  position: absolute;
+  top: 60px;
+  left: 884px;
+  width: 136px;
+  height: 50px;
+}
+.how-are-you1 {
+  position: absolute;
+  top: 360px;
+  left: 170px;
+  font-size: var(--font-size-46xl);
+  display: inline-block;
+  width: 739px;
+}
+.im-here-to1 {
+  position: absolute;
+  top: 556px;
+  left: 127px;
+}
+.mask-group-icon16 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 106px;
+  height: 106px;
+  object-fit: cover;
+}
+.bored1 {
+  position: absolute;
+  top: 106px;
+  left: 6px;
+}
+.mask-group-parent3 {
+  position: absolute;
+  top: 1260px;
+  left: 486px;
+  width: 106px;
+  height: 154px;
+  color: var(--color-gray-200);
+}
+.happy1 {
+  position: absolute;
+  top: 106px;
+  left: 0;
+}
+.mask-group-parent4 {
+  position: absolute;
+  top: 772px;
+  left: 370px;
+  width: 106px;
+  height: 154px;
+  color: var(--color-gray-200);
+}
+.tired-group,
+.tired1 {
+  position: absolute;
+  top: 106px;
+  left: 14px;
+}
+.tired-group {
+  top: 1006px;
+  left: 370px;
+  width: 106px;
+  height: 154px;
+  color: var(--color-gray-200);
+}
+.sad-group,
+.sad1 {
+  position: absolute;
+  top: 106px;
+  left: 22px;
+}
+.sad-group {
+  top: 772px;
+  left: 587px;
+  width: 106px;
+  height: 154px;
+}
+.group-child1,
+.stressed1 {
+  position: absolute;
+  top: 112px;
+  left: 0;
+}
+.group-child1 {
+  top: -1.5px;
+  left: 16px;
+  width: 106px;
+  height: 113.5px;
+  object-fit: cover;
+}
+.stressed-group {
+  position: absolute;
+  top: 999px;
+  left: 571px;
+  width: 138px;
+  height: 160px;
+  color: var(--color-gray-200);
+}
+.selection-child,
+.selection-item {
+  position: absolute;
+  top: 1260px;
+  left: 486px;
+  width: 106px;
+  height: 106px;
+}
+.selection-item {
+  top: 1005px;
+  left: 587px;
+}
+.rectangle-div,
+.selection-child1,
+.selection-inner {
+  position: absolute;
+  top: 772px;
+  left: 370px;
+  width: 106px;
+  height: 106px;
+}
+.rectangle-div,
+.selection-child1 {
+  top: 1006px;
+}
+.rectangle-div {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-base);
+  background-color: var(--color-white);
+  width: 120px;
+  height: 60px;
+}
+.next2 {
+  position: absolute;
+  top: 6px;
+  left: 25px;
+  font-size: var(--font-size-13xl);
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-gray-100);
+  text-align: center;
+}
+.rectangle-container {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 1565px;
+  left: 480px;
+  width: 120px;
+  height: 60px;
+}
+.selection-child2 {
+  position: absolute;
+  top: 1668px;
+  left: 72px;
+  width: 110px;
+  height: 161px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.selection {
+  position: relative;
+  background-color: var(--color-gray-100);
+  width: 100%;
+  height: 1920px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}

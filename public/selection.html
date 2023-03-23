@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/options.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+    />
+  </head>
+  <body onload="setUpInformation()">
+    <div class="options">
+      <div class="friday-march-174" id="dateDisplay" >Friday, March 17</div>
+      <div class="div4" id="timeDisplay">12:45</div>
+      <div class="c-parent1">
+        <div class="c4">7 °C</div>
+        <img
+          class="mask-group-icon10"
+          alt=""
+          src="icons/cloud.png"
+        />
+      </div>
+      <div class="how-are-you" id="name">How are you feeling today, Sandy?</div>
+      <div class="im-here-to">
+        I'm here to help you take care of your mental health
+      </div>
+      <img
+        class="options-child"
+        alt=""
+        src="icons/group-9@2x.png"
+        id="groupImage"
+        style="top: 1700px; left: 30px;"
+      />
+      <div class="happy-group" id="happyGroupContainer">
+        <img id="HappyImg"
+          class="mask-group-icon11"
+          alt=""
+          src="icons/mask-group2@2x.png"
+        />
+        <div class="happy" id="HappyText">Happy</div>
+      </div>
+      <div class="sad-parent" id="groupContainer1">
+        <div class="sad" id="SadText">Sad</div>
+        <img id="SadImg"
+          class="mask-group-icon11"
+          alt=""
+          src="icons/mask-group4@2x.png"
+        />
+      </div>
+      <div class="stressed-parent" id="groupContainer2">
+        <div class="stressed" id="StressedText">Stressed</div>
+        <img id="StressedImg" class="group-child" alt="" src="icons/group-2@2x.png" />
+      </div>
+      <div class="mask-group-parent2" id="groupContainer3">
+        <img ID="BoredImg"
+          class="mask-group-icon11"
+          alt=""
+          src="icons/bored.png"
+        />
+        <div class="bored" id="BoredText">Bored</div>
+      </div>
+      <div class="tired-parent" id="groupContainer4">
+        <div class="tired" id="TiredText">Tired</div>
+        <img id="TiredImg"
+          class="mask-group-icon11"
+          alt=""
+          src="icons/mask-group3@2x.png"
+        />
+      </div>
+ 
+      <div class="rectangle-parent" id="groupContainer5">
+        <div class="group-item"></div>
+        <div class="next">Next</div>
+      </div>
+      <div class="rectangle-parent" id="groupContainer6">
+        <div class="group-item"></div>
+        <div class="next">Next</div>
+      </div>
+    </div>
+    <script>
+
+      function findLightUp(){
+        if(document.getElementById("HappyImg").style.opacity == '1')
+            return 'Happy'
+        else if(document.getElementById("SadImg").style.opacity == '1')
+            return 'Sad'
+        else if(document.getElementById("TiredImg").style.opacity == '1')
+            return 'Tired'
+        else if(document.getElementById("StressedImg").style.opacity == '1')
+            return 'Stressed'
+        else if(document.getElementById("BoredImg").style.opacity == '1')
+            return 'Bored'
+      }
+
+      function moveRight(){
+        var lightUp = findLightUp()
+        if(lightUp === 'Happy'){
+          document.getElementById("HappyText").style.color="var(--color-gray-200)"
+          document.getElementById("HappyImg").style.opacity="0.5"
+          document.getElementById("SadText").style.color="white"
+          document.getElementById("SadImg").style.opacity="1"
+        }
+
+        if(lightUp === 'Sad'){
+          document.getElementById("SadText").style.color="var(--color-gray-200)"
+          document.getElementById("SadImg").style.opacity="0.5"
+          document.getElementById("StressedText").style.color="white"
+          document.getElementById("StressedImg").style.opacity="1"
+          
+        }
+
+        if(lightUp === 'Tired'){
+          document.getElementById("TiredText").style.color="var(--color-gray-200)"
+          document.getElementById("TiredImg").style.opacity="0.5"
+          document.getElementById("HappyText").style.color="white"
+          document.getElementById("HappyImg").style.opacity="1"
+        }
+
+        if(lightUp === 'Stressed'){
+          document.getElementById("StressedText").style.color="var(--color-gray-200)"
+          document.getElementById("StressedImg").style.opacity="0.5"
+          document.getElementById("BoredText").style.color="white"
+          document.getElementById("BoredImg").style.opacity="1"
+        }
+
+        if(lightUp === 'Bored'){
+          document.getElementById("BoredText").style.color="var(--color-gray-200)"
+          document.getElementById("BoredImg").style.opacity="0.5"
+          document.getElementById("TiredText").style.color="white"
+          document.getElementById("TiredImg").style.opacity="1"
+         
+        }
+
+      }
+
+      function next() {
+        var lightUp = findLightUp()
+        if(lightUp === 'Happy'){
+          let x = Math.floor(Math.random()*3+1);
+          if(x==1){location.replace("happy-prompts.html")}
+          else if(x==2){location.replace("happy-prompts1.html")}
+          else if(x==3){location.replace("happy-prompts2.html")}
+        }
+        if(lightUp === 'Sad'){
+          let x = Math.floor(Math.random()*8+1);
+          if(x==1){location.replace("sad-prompts.html")}
+          else if(x==2){location.replace("sad-prompts1.html")}
+          else if(x==3){location.replace("sad-prompts2.html")}
+          else if(x==4){location.replace("sad-prompts3.html")}
+          else if(x==5){location.replace("break.html")}
+          else if(x==6){location.replace("sad-prompts4.html")}
+          else if(x==7){location.replace("sad-prompts5.html")}
+          else if(x==8){location.replace("sad-prompts6.html")}
+        }
+        if(lightUp === 'Tired'){
+          let x = Math.floor(Math.random()*8+1);
+          if(x==1){location.replace("tired-prompts.html")}
+          else if(x==2){location.replace("tired-prompts1.html")}
+          else if(x==3){location.replace("tired-prompts2.html")}
+          else if(x==4){location.replace("tired-prompts3.html")}
+          else if(x==5){location.replace("tired-prompts4.html")}
+          else if(x==6){location.replace("tired-prompts5.html")}
+          else if(x==7){location.replace("tired-prompts6.html")}
+          else if(x==8){location.replace("tired-prompts7.html")}
+        }
+        if(lightUp === 'Stressed'){
+          let x = Math.floor(Math.random()*8+1);
+          if(x==1){location.replace("stressed-prompts.html")}
+          else if(x==2){location.replace("stressed-prompts1.html")}
+          else if(x==3){location.replace("stressed-prompts2.html")}
+          else if(x==4){location.replace("stressed-prompts3.html")}
+          else if(x==5){location.replace("break.html")}
+          else if(x==6){location.replace("stressed-prompts4.html")}
+          else if(x==7){location.replace("stressed-prompts5.html")}
+          else if(x==8){location.replace("stressed-prompts6.html")}
+        }
+        if(lightUp === 'Bored'){
+          let x = Math.floor(Math.random()*4+1);
+          if(x==1){location.replace("bored-prompts.html")}
+          else if(x==2){location.replace("bored-prompts1.html")}
+          else if(x==3){location.replace("bored-prompts2.html")}
+          else if(x==4){location.replace("bored-prompts3.html")}
+        }
+
+      }
+
+      function back(){  
+        location.replace("index.html")
+      }
+
+      function setUpInformation(){
+
+        const date = new Date();
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+        const dayName = days[date.getDay()]
+        const months = { 0: 'January', 1: 'February', 2: 'March', 3: 'April', 4: 'May', 5: 'June', 6: 'July', 7: 'August', 8: 'September', 9: 'October', 10: 'November', 11: 'December'}
+        const monthName = months[date.getMonth()]
+        const num = date.getDate()
+        document.getElementById("dateDisplay").innerText= dayName + ", " + monthName + " " + num
+        document.getElementById("timeDisplay").innerText= date.toLocaleString('en-US',{hour:'numeric',minute:'numeric',hour12:true})
+        
+        document.getElementById("HappyText").style.color="white"
+        document.getElementById("HappyImg").style.opacity="1.0"
+        
+        const socket = new WebSocket('ws://localhost:3000/ws')
+        socket.onmessage = (event) => {
+            //document.getElementById('status').innerText = 'Got: ' + event.data
+            if(event.data === "Red") moveRight();
+            if(event.data === "Blue") back();
+            if(event.data === "Green") next()
+            if(event.data === "Access Sandy" || event.data === "Access Mark" || event.data === "Access Alex" ){
+              nameArray = event.data.split(" ")
+              name = nameArray[1]
+              if(name === "Sandy")
+                document.getElementById("name").innerText= "How are you feeling today, Sandy?"
+              else if(name === "Mark")
+                document.getElementById("name").innerText= "How are you feeling today, Mark?"
+              else if(name === "Alex")
+                document.getElementById("name").innerText= "How are you feeling today, Alex?"
+            }
+
+        }
+      
+      }
+
+      </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+.friday-march-17 {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  font-size: var(--font-size-21xl);
+  font-weight: 500;
+}
+.div {
+  top: 120px;
+  left: 60px;
+  font-size: var(--font-size-46xl);
+  font-weight: 300;
+}
+.c,
+.div,
+.pm {
+  position: absolute;
+}
+.pm {
+  top: 143px;
+  left: 226px;
+  font-weight: 300;
+}
+.c {
+  top: 1px;
+  left: 60px;
+}
+.c-parent,
+.mask-group-icon {
+  position: absolute;
+  height: 50px;
+}
+.mask-group-icon {
+  top: 0;
+  left: 0;
+  width: 50px;
+  object-fit: cover;
+}
+.c-parent {
+  top: 60px;
+  left: 884px;
+  width: 136px;
+  font-size: var(--font-size-13xl);
+}
+.have-a-lovely {
+  margin: 0;
+}
+.have-a-lovely-container {
+  position: absolute;
+  top: 905px;
+  left: 226px;
+  font-weight: 300;
+}
+.exit {
+  position: relative;
+  background-color: var(--color-gray-100);
+  width: 100%;
+  height: 1920px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-31xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}

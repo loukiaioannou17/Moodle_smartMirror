@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --font-inherit: inherit;
+
+  /* font sizes */
+  --font-size-31xl: 50px;
+  --font-size-13xl: 32px;
+  --font-size-46xl: 65px;
+  --font-size-21xl: 40px;
+
+  /* Colors */
+  --color-gray-100: #00020c;
+  --color-gray-200: rgba(255, 255, 255, 0.2);
+  --color-white: #fff;
+
+  /* border radiuses */
+  --br-base: 16px;
+}

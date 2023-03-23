@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  --font-poppins: Poppins;
+  --font-size-13xl: 32px;
+  --font-size-46xl: 65px;
+  --color-gray-100: #00020c;
+  --color-gray-200: #fff3;
+  --color-white: #fff;
+}
+
+/*# sourceMappingURL=index.689f5f05.css.map */
