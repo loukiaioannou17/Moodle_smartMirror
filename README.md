@@ -9,3 +9,4 @@ It was implemented using HTML/CSS/JavaScript.
 
 The main functionality of the mirror, is prompting the user to choose how they are feeling from the menu and then show either actions that the user can do, quotes or video exercises (breathing, stretching etc)
 
+To run this project: *nodemon server.mjs*
