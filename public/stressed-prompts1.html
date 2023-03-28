@@ -1,3 +1,4 @@
+<!--This page is a prompt when the user is feeling stressed. It is an action page-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -48,7 +49,7 @@
       function back(){
         location.replace("selection.html")
       }
-
+      //shuffles through the stressed prompts
       function regenerate() {
         let x = Math.floor(Math.random()*8+1);
           if(x==1){location.replace("stressed-prompts.html")}
@@ -60,7 +61,7 @@
           else if(x==7){location.replace("stressed-prompts5.html")}
           else if(x==8){location.replace("stressed-prompts6.html")}
       }
-
+      //sets up the time/date and the websocket
      function setUpInformation(){
 
         const date = new Date();

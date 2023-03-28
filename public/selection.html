@@ -1,3 +1,4 @@
+<!--This page is the main selection page, presenting all the differnet emotions the user can select.-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -80,7 +81,7 @@
       </div>
     </div>
     <script>
-
+      //find which emotion is selected, by checking the icon that is light up and returns that emotion
       function findLightUp(){
         if(document.getElementById("HappyImg").style.opacity == '1')
             return 'Happy'
@@ -93,7 +94,7 @@
         else if(document.getElementById("BoredImg").style.opacity == '1')
             return 'Bored'
       }
-
+      //when the user presses the right button the next icon/emotion lights up and the current one goes back to grey
       function moveRight(){
         var lightUp = findLightUp()
         if(lightUp === 'Happy'){
@@ -134,7 +135,7 @@
         }
 
       }
-
+      //depending on the emotion selected a random prompt page is showed of that emotion
       function next() {
         var lightUp = findLightUp()
         if(lightUp === 'Happy'){
@@ -189,7 +190,7 @@
       function back(){  
         location.replace("index.html")
       }
-
+      //sets up the time/date and the websocket and according to the ids of the card scanned it shows different names
       function setUpInformation(){
 
         const date = new Date();

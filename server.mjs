@@ -7,14 +7,15 @@ import {Gpio} from 'onoff'
 import Mfrc522 from 'mfrc522-rpi'
 import SoftSPI from 'rpi-softspi/lib/rpi-softspi.min.js'
 
+// This code is for the websocket and reading the inputs from the pi and sending the according messages back to the javascript
 
 const currentFolder = path.dirname(fileURLToPath(import.meta.url))
 
 const app = express()
 const server = http.Server(app)
-
+//specify websocket
 const wss = new WebSocketServer({ server: server, path: '/ws', clientTracking: true })
-
+//specify where each button is connected and where the scanner is
 const green = new Gpio(2,'in')
 const blue = new Gpio(3,'in')
 const red = new Gpio(4,'in')
@@ -32,7 +33,7 @@ wss.on('connection', function(ws) {
 })
 
 setInterval(() => { broadcast() }, 100)
-
+//This function sends a message to the websocket according to what input it receives from the pi
 function broadcast() {
     for (const ws of wss.clients) {
         const valueBlue = blue.readSync()
@@ -65,7 +66,7 @@ function broadcast() {
         }
     }
   }
-
+//This function checks the ids of the rfid scanned and according to which of the already defined ids it matches it displays the corelating name
   function compareArrays(response){
     var card1 = new Array (26,51,8,176,145)
     var card2 = new Array(128,195,148,161,118)

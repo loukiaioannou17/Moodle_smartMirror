@@ -1,3 +1,4 @@
+<!--This page is a prompt when the user is feeling sad. It is an action page-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -56,7 +57,7 @@
       function back(){
         location.replace("selection.html")
       }
-
+      //shuffles through the sad prompts
       function regenerate(){
         let x = Math.floor(Math.random()*4+1);
           if(x==1){location.replace("sad-prompts1.html")}
@@ -64,7 +65,7 @@
           else if(x==3){location.replace("sad-prompts3.html")}
           else if(x==4){location.replace("sad-prompts.html")}
       } 
-
+      //sets up the time/date and the websocket
      function setUpInformation(){
 
         const date = new Date();

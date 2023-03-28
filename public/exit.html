@@ -1,3 +1,4 @@
+<!--This page is the are you sure you want to exit page. When the user presses the select button while in the prompt page, this is the page that is shown.-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -24,6 +25,7 @@
     </div>
 
     <script>
+      //When the next button is pressed then the option yes is light up or the no option
      function select(){
       if(document.getElementById("noText").style.color=="grey") {
         document.getElementById("yesText").style.color="grey"
@@ -33,7 +35,8 @@
         document.getElementById("noText").style.color="grey"
       }
      } 
-
+     // when the user presses the select button then this function is called if the user
+     //selected the yes option then it goes back to the selection page, otherwise to the final exit option
      function next(){
       if(document.getElementById("noText").style.color=="grey") {
         location.replace("selection.html")
@@ -46,6 +49,7 @@
       location.replace("selection.html")
      }
 
+     //sets up the time/date and the websocket
      function setUpInformation(){
 
         const date = new Date();

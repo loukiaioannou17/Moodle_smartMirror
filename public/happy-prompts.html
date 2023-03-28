@@ -1,3 +1,4 @@
+<!--This page is a prompt when the user is feeling happy. It is a standard quote page-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -43,13 +44,14 @@
       function back(){
         location.replace("selection.html")
       }
-
+      //shuffles through the happy prompts
       function regenerate() {
         let x = Math.floor(Math.random()*2+1);
           if(x==1){location.replace("happy-prompts2.html")}
           else if(x==2){location.replace("happy-prompts1.html")}
       }
 
+      //sets up the time/date and the websocket
      function setUpInformation(){
 
         const date = new Date();

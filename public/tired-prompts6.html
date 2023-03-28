@@ -1,3 +1,4 @@
+<!--This page is a prompt when the user is feeling tired. It is an action page-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -49,7 +50,7 @@
       function back(){
         location.replace("selection.html")
       }
-
+      //shuffles through the tired prompts
       function regenerate() {
         let x = Math.floor(Math.random()*8+1);
           if(x==1){location.replace("tired-prompts.html")}
@@ -61,7 +62,7 @@
           else if(x==7){location.replace("tired-prompts6.html")}
           else if(x==8){location.replace("tired-prompts7.html")}
       }
-
+      //sets up the time/date and the websocket
      function setUpInformation(){
 
         const date = new Date();
