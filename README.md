@@ -20,4 +20,8 @@ First, you need to connect the raspberry pi to the defined pins as shown in the 
 To run this project: *nodemon server.mjs*
 
 # Architecture
-When the mirror is idle then it shows the index.html. The user scans their card, the system detects the scan through a websocket in the server.mjs, and the display is now the selection.html file. Using the buttons on the dashboard the user selects their emotion that is detected through javascript and when the select button is pressed then the display shows the prompts of the selected emotion. If the user is in a prompt page and presses the select button again, then the system shuffles through the prompts. Once the next button is pressed then the display shows the exit.html. If the user presses selects the yes option on the "Is there anything that i can help you with?" question then the page changes back to the selection.html page, otherwise it goes back to the index.html page until a new card is scanned.
+1. When the mirror is idle then it shows the index.html. The user scans their card, the system detects the scan through a websocket in the server.mjs, and the display is now the selection.html file. 
+2. Using the buttons on the dashboard the user selects their emotion that is detected through javascript and when the select button is pressed then the display shows the prompts of the selected emotion. 
+3. If the user is in a prompt page and presses the select button again, then the system shuffles through the prompts. 
+4. Once the next button is pressed then the display shows the exit.html.
+5. If the user presses selects the yes option on the "Is there anything that i can help you with?" question then the page changes back to the selection.html page, otherwise it goes back to the index.html page until a new card is scanned.
